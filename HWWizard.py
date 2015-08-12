@@ -1,4 +1,3 @@
-import hostlist
 from collections import namedtuple
 
 from Qt import QtGui, QtCore, loadUi
@@ -42,7 +41,7 @@ class HWWizard(QtGui.QWizard):
         if result:
             print(" selected hosts:")
             for (conf, hosts) in self.hosts.items():
-                name = hostlist.collect_hostlist([h.name for h in hosts])
+                name = str([h.name for h in hosts])
                 print("  {0}: {1}".format(conf, [h.name for h in hosts]))
             print(" main HW Prop Set: {0}".format(self.template_props))
             print(" main HW Prop Set Name: {0}".format(self.template_hw_prop_set_name))

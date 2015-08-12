@@ -1,6 +1,5 @@
 from Qt import QtGui, QtCore, loadUi
 from QtCore import Slot
-import hostlist
 
 from Autoconfig import Autoconfig
 
@@ -59,7 +58,7 @@ class HostSelectionPage(QtGui.QWizardPage):
         self.tableWidget.clearContents()
         self.tableWidget.setRowCount(0)
         for (conf, hosts) in self.wizard().hosts.items():
-            name = hostlist.collect_hostlist([h.name for h in hosts])
+            name = str([h.name for h in hosts])
             print("{0}: {1}".format(conf, [h.name for h in hosts]))
             self.tableWidget.insertRow(0)
             w = QtGui.QTableWidgetItem(name)

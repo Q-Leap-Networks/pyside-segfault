@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WizardPage</class>
+ <widget class="QWizardPage" name="WizardPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>155</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Main Hardware Prop Set Page</string>
+  </property>
+  <property name="title">
+   <string>Main Hardware Property Set</string>
+  </property>
+  <property name="subTitle">
+   <string>Choose an existing or similar Hwardware Property Set that matches or enter a name to create a new Hardware Property Set:</string>
+  </property>
+  <attribute name="pageId">
+   <string notr="true">2</string>
+  </attribute>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="HWPropSetChoiceWidget" name="choiceWidget" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HWPropSetChoiceWidget</class>
+   <extends>QWidget</extends>
+   <header>HWPropSetChoiceWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

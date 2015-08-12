@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HWWizard</class>
+ <widget class="QWizard" name="HWWizard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>663</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hardware Wizard</string>
+  </property>
+  <property name="options">
+   <set>QWizard::HaveHelpButton|QWizard::NoBackButtonOnStartPage</set>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
